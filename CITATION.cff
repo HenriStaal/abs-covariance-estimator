@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this code in your research, please cite it accordingly."
+title:       "Adaptive Beta Shrinkage (ABS) Covariance Estimator"
+version:     "0.1.0"
+date-released: 2025-07-31
+authors:
+  - family-names: Staal
+    given-names:  Henri
+repository-code: "https://github.com/HenriStaal/abs-covariance-estimator"
