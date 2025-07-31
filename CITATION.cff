@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this code in your research, please cite it accordingly."
-title:       "Adaptive Beta Shrinkage (ABS) Covariance Estimator"
+title:       "Adaptive Beta Shrinkage (ABS) Covariance Matrix Estimator"
 version:     "0.1.0"
 date-released: 2025-07-31
 authors:
