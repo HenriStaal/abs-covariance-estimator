@@ -1,4 +1,4 @@
-Adaptive Beta Shrinkage (ABS) estimator
+This function implements the Adaptive Beta Shrinkage (ABS) algorithm for the estimation of covariance matrices, as in Staal & Flint (manuscript under review).
 
 Implements steps 2–4 of the ABS algorithm from Staal & Flint (manuscript under review):
 * **Step 1 (volatility adjustment)** is *not* included here, to stay consistent with the application in Staal & Flint (manuscript under review). If you would like to implement this step, apply it to the returns matrix before calling this function.
