@@ -34,15 +34,15 @@ P_hat <- ABS(R, lambda  = 0.1, V = rep(1, nrow(R)), B_prior = "0")
 
 **Notation** (in code vs. that used in Staal & Flint (manuscript under review)):
 
-- **P_sample** – $\rho_s$ (sample correlation matrix)  
-- **S** – $S$ (standardised returns matrix)  
-- **B_hat** – $\hat\beta$ (ridge‐estimated pairwise beta)  
-- **B_prior** – $\beta_{\mathrm{prior}}$ (prior mean for beta)  
-- **sigma2_hat_B** – $\hat\sigma^2_{\beta}$ (sampling variance of $\hat\beta$)  
-- **sigma2_B_hat** – $\sigma^2_{\hat\beta}$ (cross‐sectional variance of $\hat\beta$)  
-- **sigma2_prior** – $\sigma^2_{\mathrm{prior}}$ (prior variance used in Vasicek shrinkage)  
-- **B_post** – $\beta_{\mathrm{post}}$ (posterior mean, i.e., shrunken beta)  
-- **P_hat** – $\hat P$ (final shrunken correlation matrix) 
+- **P_sample** – ρₛ (sample correlation matrix)  
+- **S** – S (standardised returns matrix)  
+- **B_hat** – β̂ (ridge‐estimated pairwise beta)  
+- **B_prior** – βₚᵣᵢₒᵣ (prior mean for beta)  
+- **sigma2_hat_B** – σ̂²ᵦ (sampling variance of β̂)  
+- **sigma2_B_hat** – σ²ᵦ̂ (cross‐sectional variance of β̂)  
+- **sigma2_prior** – σ²ₚᵣᵢₒᵣ (prior variance used in Vasicek shrinkage)  
+- **B_post** – βₚₒₛₜ (posterior mean, i.e., shrunken beta)  
+- **P_hat** – P̂ (final shrunken correlation matrix) 
 
 *Note:* An “off” suffix indicates that the variable is a vector that stores the respective values for all off-diagonal entries (i.e. for all i, j such that i ≠ j).
 
