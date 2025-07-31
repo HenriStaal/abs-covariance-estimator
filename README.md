@@ -8,7 +8,7 @@ The function implements steps 2–4, as detailed in Staal & Flint (manuscript un
 install.packages("Matrix")
 
 # Load the ABS function
-source("abs_covariance_estimator.R")
+source("abs-covariance-estimator.R")
 
 # Example call
 # R is a t × n returns matrix
