@@ -1,7 +1,18 @@
 This function implements the Adaptive Beta Shrinkage (ABS) algorithm for the estimation of covariance matrices, as in Staal & Flint (manuscript under review).
 
-Implements steps 2–4 of the ABS algorithm from Staal & Flint (manuscript under review):
-* **Step 1 (volatility adjustment)** is *not* included here, to stay consistent with the application in Staal & Flint (manuscript under review). If you would like to implement this step, apply it to the returns matrix before calling this function.
+Implements steps 2–4 of the ABS algorithm from Staal & Flint (manuscript under review). **Step 1 (volatility adjustment)** is *not* included here, to stay consistent with the application in Staal & Flint (manuscript under review). If you would like to implement this step, apply it to the returns matrix before calling this function.
+
+**Usage:**
+```r
+# Install dependency
+install.packages("Matrix")
+
+# Load the ABS function
+source("abs_covariance_estimator.R")
+
+# Example call
+# R is a t × n returns matrix
+P_hat <- ABS(R, lambda  = 0.1, V = rep(1, nrow(R)), B_prior = "0")
 
 **Args:**
 * **R**  
@@ -20,7 +31,7 @@ Implements steps 2–4 of the ABS algorithm from Staal & Flint (manuscript under
 * **P_hat**  
   n × n shrunk correlation matrix.  
 
-**Notation** (in code vs. in Staal & Flint (2025)):
+**Notation** (in code vs. that used in Staal & Flint (manuscript under review)):
 - **P_sample** – ρₛ (sample correlation matrix)  
 - **S** – S (standardised returns matrix)  
 - **B_hat** – β̂ (ridge‐estimated pairwise beta)  
