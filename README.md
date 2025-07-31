@@ -13,6 +13,7 @@ source("abs_covariance_estimator.R")
 # Example call
 # R is a t × n returns matrix
 P_hat <- ABS(R, lambda  = 0.1, V = rep(1, nrow(R)), B_prior = "0")
+```
 
 **Args:**
 * **R**  
