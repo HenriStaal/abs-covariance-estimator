@@ -36,13 +36,14 @@ P_hat <- ABS(R, lambda  = 0.1, V = rep(1, nrow(R)), B_prior = "0")
 
 - **P_sample** – ρ<sub>s</sub> (sample correlation matrix)  
 - **S** – S (standardised returns matrix)  
-- **B_hat** – β<sup>̂</sup> (ridge‐estimated pairwise beta)  
+- **B_hat** – β<sup>̂</sup> (ridge-estimated pairwise beta)  
 - **B_prior** – β<sub>prior</sub> (prior mean for beta)  
 - **sigma2_hat_B** – σ<sup>2</sup><sub>β̂</sub> (sampling variance of β̂)  
-- **sigma2_B_hat** – σ<sup>2</sup><sub>^β̂</sub> (cross‐sectional variance of β̂)  
+- **sigma2_B_hat** – σ<sup>2</sup><sub>β̂</sub> (cross-sectional variance of β̂)  
 - **sigma2_prior** – σ<sup>2</sup><sub>prior</sub> (prior variance used in Vasicek shrinkage)  
 - **B_post** – β<sub>post</sub> (posterior mean, i.e., shrunken beta)  
-- **P_hat** – P<sup>̂</sup> (final shrunken correlation matrix) 
+- **P_hat** – P<sup>̂</sup> (final shrunken correlation matrix)  
+
 *Note:* An “off” suffix indicates that the variable is a vector that stores the respective values for all off-diagonal entries (i.e. for all i, j such that i ≠ j).
 
 **Requires:**
