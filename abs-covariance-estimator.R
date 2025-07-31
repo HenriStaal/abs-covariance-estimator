@@ -79,10 +79,10 @@ ABS <- function(R, lambda = NULL, V = NULL, B_prior = "0") {
     P_hat <- matrix(1, n, n)
     P_hat[cbind(i_idx, j_idx)] <- B_post_off
   
-  # Average the two pairwise betas (though this is only necessary if non-unit weights are used in W)
+  # Average the two pairwise betas (though this only makes a difference if non-unit weights are used in W)
   P_hat <- (P_hat + t(P_hat)) / 2
   
-  # Test whether the shrunk correlation matrix is positive definite. If not, find the nearest positive definite matrix using the nearPD function. 
+  # Test whether the shrunk correlation matrix is positive definite. If not, find the nearest positive definite matrix using the nearPD function. (this is only needed in some cases where non-unit weights are used in W)
   if(any(eigen(P_hat, only.values = TRUE)$values <= 0)) {
     P_hat <- as.matrix(nearPD(P_hat)$mat)
   }
