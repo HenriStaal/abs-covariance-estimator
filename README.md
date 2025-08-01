@@ -15,27 +15,17 @@ source("abs-covariance-estimator.R")
 P_hat <- ABS(R, lambda  = 0.1, V = rep(1, nrow(R)), B_prior = "0")
 ```
 
-**Quick Start**
+**Quick Start - Source directly from GitHub**
 
-* **1. Source directly from GitHub**
 ```r
 install.packages("Matrix")  
 source("https://raw.githubusercontent.com/HenriStaal/abs-covariance-estimator/main/abs-covariance-estimator.R")  
 P_hat <- ABS(R)
 ```
-* **2. Clone locally**
-```bash
-git clone https://github.com/HenriStaal/abs-covariance-estimator.git  
-cd abs-covariance-estimator
-```r```
-install.packages("Matrix")  
-source("abs-covariance-estimator.R")  
-P_hat <- ABS(R)
-```
 
 **Args:**
 * **R**  
-  t × n matrix of returns (t time points, n assets). May be raw or already volatility-adjusted.  
+  t × n matrix of returns (t time periods, n assets). May be raw or already volatility-adjusted.  
 * **lambda**  
   (optional) Ridge penalty for step 3. Default: `max(log(n / t), 0)`.  
 * **V**  
@@ -62,7 +52,7 @@ P_hat <- ABS(R)
 - **B_post** – β<sub>post</sub> (posterior mean, i.e., shrunken beta)  
 - **P_hat** – P<sup>̂</sup> (final shrunken correlation matrix) 
 
-*Note:* An “off” suffix indicates that the variable is a vector that stores the respective values for all off-diagonal entries (i.e. for all i, j such that i ≠ j).
+*Note:* An “off” suffix in a variable name indicates that the variable is a vector that stores the respective values for all off-diagonal entries (i.e. for all i, j where i ≠ j).
 
 **Requires:**
 * `library(Matrix)` for `nearPD()` function
