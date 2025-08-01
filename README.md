@@ -1,6 +1,6 @@
-This function implements the Adaptive Beta Shrinkage (ABS) algorithm for the estimation of covariance matrices, as in Staal & Flint (manuscript under review).
+The R script abs-covariance-estimator.R provides the ABS() function, which implements the Adaptive Beta Shrinkage estimator for covariance matrices (Staal & Flint, manuscript under review).
 
-The function implements steps 2–4, as detailed in Staal & Flint (manuscript under review). **Step 1 (volatility adjustment)** is *not* included here, to stay consistent with the application in Staal & Flint (manuscript under review). To include Step 1, apply the volatility adjustment to the returns matrix before calling this function.
+The function implements steps 2–4, as detailed in Staal & Flint (manuscript under review). **Step 1 (volatility adjustment)** is *not* included here, to stay consistent with the application in Staal & Flint (manuscript under review). To include Step 1, apply a volatility adjustment to the returns matrix before calling this function.
 
 **Usage:**
 ```r
