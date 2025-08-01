@@ -15,6 +15,25 @@ source("abs-covariance-estimator.R")
 P_hat <- ABS(R, lambda  = 0.1, V = rep(1, nrow(R)), B_prior = "0")
 ```
 
+## Quick Start
+
+### 1. Source directly from GitHub
+```r
+install.packages("Matrix")  
+source("https://raw.githubusercontent.com/HenriStaal/abs-covariance-estimator/main/abs-covariance-estimator.R")  
+P_hat <- ABS(R)
+
+### 2. Clone locally
+```bash
+git clone https://github.com/HenriStaal/abs-covariance-estimator.git  
+cd abs-covariance-estimator
+
+install.packages("Matrix")  
+source("abs-covariance-estimator.R")  
+P_hat <- ABS(R)
+
+
+
 **Args:**
 * **R**  
   t × n matrix of returns (t time points, n assets). May be raw or already volatility-adjusted.  
@@ -48,3 +67,7 @@ P_hat <- ABS(R, lambda  = 0.1, V = rep(1, nrow(R)), B_prior = "0")
 
 **Requires:**
 * `library(Matrix)` for `nearPD()` function
+
+**Citation**
+Staal, H. (2025). ABS Covariance Estimator [R script]. GitHub.
+https://github.com/HenriStaal/abs-covariance-estimator
