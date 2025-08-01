@@ -15,24 +15,23 @@ source("abs-covariance-estimator.R")
 P_hat <- ABS(R, lambda  = 0.1, V = rep(1, nrow(R)), B_prior = "0")
 ```
 
-## Quick Start
+**Quick Start**
 
-### 1. Source directly from GitHub
+* **1. Source directly from GitHub**
 ```r
 install.packages("Matrix")  
 source("https://raw.githubusercontent.com/HenriStaal/abs-covariance-estimator/main/abs-covariance-estimator.R")  
 P_hat <- ABS(R)
-
-### 2. Clone locally
+```
+* **2. Clone locally**
 ```bash
 git clone https://github.com/HenriStaal/abs-covariance-estimator.git  
 cd abs-covariance-estimator
-
+```r```
 install.packages("Matrix")  
 source("abs-covariance-estimator.R")  
 P_hat <- ABS(R)
-
-
+```
 
 **Args:**
 * **R**  
