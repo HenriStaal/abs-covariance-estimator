@@ -58,7 +58,8 @@ P_hat <- ABS(R)
 * `library(Matrix)` for `nearPD()` function
 
 **Citation**
+
 If you find this work useful, please cite the following paper:
 
-Staal, H., & Flint, E. (2025). Adaptive Beta Shrinkage estimation of covariance matrices. Investment Analysts Journal. https://doi.org/10.1080/10293523.2025.2553255
+Staal, H., & Flint, E. (2025). Adaptive Beta Shrinkage estimation of covariance matrices. *Investment Analysts Journal*. https://doi.org/10.1080/10293523.2025.2553255
 
