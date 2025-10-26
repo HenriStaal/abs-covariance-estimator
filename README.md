@@ -57,7 +57,7 @@ P_hat <- ABS(R)
 **Requires:**
 * `library(Matrix)` for `nearPD()` function
 
-**Citation**
+**Citation:**
 
 If you find this work useful, please cite the following paper:
 
