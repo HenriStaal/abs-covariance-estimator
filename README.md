@@ -1,6 +1,6 @@
-The R script abs-covariance-estimator.R provides the ABS() function, which implements the Adaptive Beta Shrinkage estimator for covariance matrices (Staal & Flint, manuscript under review).
+The R script abs-covariance-estimator.R provides the ABS() function, which implements the Adaptive Beta Shrinkage estimator for covariance matrices (Staal & Flint, 2025; https://doi.org/10.1080/10293523.2025.2553255).
 
-The function implements steps 2–4, as detailed in Staal & Flint (manuscript under review). **Step 1 (volatility adjustment)** is *not* included here, to stay consistent with the application in Staal & Flint (manuscript under review). To include Step 1, apply a volatility adjustment to the returns matrix before calling this function.
+The function implements steps 2–4, as detailed in Staal & Flint (2025). **Step 1 (volatility adjustment)** is *not* included here, to stay consistent with the application in Staal & Flint (manuscript under review). To include Step 1, apply a volatility adjustment to the returns matrix before calling this function.
 
 **Usage:**
 ```r
@@ -58,5 +58,7 @@ P_hat <- ABS(R)
 * `library(Matrix)` for `nearPD()` function
 
 **Citation**
-Staal, H. (2025). ABS Covariance Estimator [R script]. GitHub.
-https://github.com/HenriStaal/abs-covariance-estimator
+If you find this work useful, please cite the following paper:
+
+Staal, H., & Flint, E. (2025). Adaptive Beta Shrinkage estimation of covariance matrices. Investment Analysts Journal. https://doi.org/10.1080/10293523.2025.2553255
+
