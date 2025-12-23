@@ -34,7 +34,7 @@ P_hat <- ABS(R)
   (optional) Length-t vector of observation weights. Converted internally to `W = diag(V)`. Default: `rep(1, t)`.  
 * **B_prior**  
   Shrinkage prior for β:  
-  * `"0"` – zero prior (default, as used in Staal & Flint (manuscript under review))  
+  * `"0"` – zero prior (default, as used in Staal & Flint (2025))  
   * `"MLE"` – uses the empirical-Bayes MLE of β as prior  
   * *numeric* – fixed prior value specified by the user  
 
