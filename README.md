@@ -42,7 +42,7 @@ P_hat <- ABS(R)
 * **P_hat**  
   n × n shrunk correlation matrix.
 
-**Notation** (in code vs. that used in Staal & Flint (manuscript under review)):
+**Notation** (in code vs. that used in Staal & Flint (2025)):
 
 - **P_sample** – ρ<sub>s</sub> (sample correlation matrix)  
 - **S** – S (standardised returns matrix)  
